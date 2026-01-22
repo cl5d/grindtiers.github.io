@@ -1,0 +1,112 @@
+{
+  "roleColors": {
+    "owner": "#8B0000",
+    "admin": "#FF0000",
+    "moderador": "#0303b3",
+    "dev": "#14b814",
+    "maestro": "#aa00aa",
+    "media": "#5c009e"
+  },
+  "staffRoles": {
+    "iARROWDEATH": "owner",
+    "Povess": "owner",
+    "ItzJustPato": "moderador",
+    "MR_R3X": "maestro"
+  },
+  "pointsPerTier": {
+    "HT1": 60, "LT1": 45,
+    "RHT1": 60, "RLT1": 45,
+    "HT2": 30, "LT2": 20,
+    "RHT2": 30, "RLT2": 20,
+    "HT3": 10, "LT3": 6,
+    "HT4": 4, "LT4": 3,
+    "HT5": 2, "LT5": 1
+  },
+  "modeIcons": {
+    "vanilla": "content/icons/gamemodes/mctiers/img_vanilla.png",
+    "uhc": "content/icons/gamemodes/mctiers/img_uhc.png",
+    "dia_pot": "content/icons/gamemodes/mctiers/img_pot.png",
+    "neth_pot": "content/icons/gamemodes/mctiers/img_nethop.png",
+    "smp": "content/icons/gamemodes/mctiers/img_smp.png",
+    "sword": "content/icons/gamemodes/mctiers/img_sword.png",
+    "axe": "content/icons/gamemodes/mctiers/img_axe.png",
+    "mace": "content/icons/gamemodes/mctiers/img_mace.png",
+    "minecart": "content/icons/gamemodes/subtiers/img_minecart.png",
+    "dia_vanilla": "content/icons/gamemodes/subtiers/img_dia_crystal.png",
+    "debuff": "content/icons/gamemodes/subtiers/img_debuff.png",
+    "elytra": "content/icons/gamemodes/subtiers/img_elytra.png",
+    "speed": "content/icons/gamemodes/subtiers/img_speed.png",
+    "creeper": "content/icons/gamemodes/subtiers/img_creeper.png",
+    "manhunt": "content/icons/gamemodes/subtiers/img_manhunt.png",
+    "dia_smp": "content/icons/gamemodes/subtiers/img_dia_smp.png",
+    "bow": "content/icons/gamemodes/subtiers/img_bow.png",
+    "bed": "content/icons/gamemodes/subtiers/img_bed.png",
+    "og_vanilla": "content/icons/gamemodes/subtiers/img_og_vanilla.png",
+    "trident": "content/icons/gamemodes/subtiers/img_trident.png",
+    "general": "content/icons/gamemodes/img_general.png"
+  },
+  "preferredModeOrder": [
+    "vanilla", "uhc", "dia_pot", "neth_pot", "smp", "sword", "axe", "mace",
+    "minecart", "dia_vanilla", "debuff", "elytra", "speed", "creeper",
+    "manhunt", "dia_smp", "bow", "bed", "og_vanilla", "trident"
+  ],
+  "rankings": {
+    "general": [],
+    "vanilla": [
+      { "rank": 0, "name": "KeyGlock_", "tier": "LT4", "region": "NA" }
+    ],
+    "uhc": [
+      { "rank": 0, "name": "Povess", "tier": "LT4", "region": "NA" },
+      { "rank": 0, "name": "sinconeexion", "tier": "LT5", "region": "NA" },
+      { "rank": 0, "name": "iARROWDEATH", "tier": "HT5", "region": "NA" }
+    ],
+    "dia_pot": [
+      { "rank": 0, "name": "KeyGlock_", "tier": "HT4", "region": "NA" },
+      { "rank": 0, "name": "sinconeexion", "tier": "LT5", "region": "NA" },
+      { "rank": 0, "name": "Povess", "tier": "LT3", "region": "NA" }
+    ],
+    "neth_pot": [
+      { "rank": 0, "name": "Povess", "tier": "LT4", "region": "NA" },
+      { "rank": 0, "name": "sinconeexion", "tier": "HT5", "region": "NA" },
+      { "rank": 0, "name": "iARROWDEATH", "tier": "HT5", "region": "NA" }
+    ],
+    "smp": [
+      { "rank": 0, "name": "sinconeexion", "tier": "LT5", "region": "NA" }
+    ],
+    "sword": [
+      { "rank": 0, "name": "iARROWDEATH", "tier": "HT3", "region": "NA" },
+      { "rank": 0, "name": "ItzJustPato", "tier": "LT3", "region": "NA" },
+      { "rank": 0, "name": "Povess", "tier": "HT3", "region": "NA" },
+      { "rank": 0, "name": "sinconeexion", "tier": "HT4", "region": "NA" },
+      { "rank": 0, "name": "KeyGlock_", "tier": "LT3", "region": "NA" },
+      { "rank": 0, "name": "MR_R3X", "tier": "HT3", "region": "NA" }
+    ],
+    "axe": [
+      { "rank": 0, "name": "iARROWDEATH", "tier": "LT4", "region": "NA" },
+      { "rank": 0, "name": "sinconeexion", "tier": "HT5", "region": "NA" },
+      { "rank": 0, "name": "Povess", "tier": "HT5", "region": "NA" }
+    ],
+    "mace": [
+      { "rank": 0, "name": "sinconeexion", "tier": "LT5", "region": "NA" }
+    ],
+    "minecart": [],
+    "dia_vanilla": [],
+    "debuff": [],
+    "elytra": [],
+    "speed": [
+      { "rank": 1, "name": "iARROWDEATH", "tier": "HT5", "region": "NA" }
+    ],
+    "creeper": [],
+    "manhunt": [],
+    "dia_smp": [
+      { "rank": 1, "name": "ItzJustPato", "tier": "LT3", "region": "NA" }
+    ],
+    "bow": [
+      { "rank": 1, "name": "iARROWDEATH", "tier": "LT3", "region": "NA" },
+      { "rank": 2, "name": "sinconeexion", "tier": "LT5", "region": "NA" }
+    ],
+    "bed": [],
+    "og_vanilla": [],
+    "trident": []
+  }
+}

@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Rankings - GrindTiers</title>
+  <link rel="icon" href="content/icons/website_icons/img_icon2.png" type="image/png" />
+
+  <!-- Fuentes Poppins locales -->
+  <style>
+    @font-face {
+      font-family: 'Poppins';
+      src: url('content/fonts/Poppins-Regular.ttf') format('truetype');
+      font-weight: 400;
+      font-style: normal;
+      font-display: swap;
+    }
+    @font-face {
+      font-family: 'Poppins';
+      src: url('content/fonts/Poppins-SemiBold.ttf') format('truetype');
+      font-weight: 600;
+      font-style: normal;
+      font-display: swap;
+    }
+  </style>
+
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Loader -->
+  <div id="page-loader" class="page-loader">
+    <div class="loader-content">
+      <p class="loader-text">cargando, espere unos momentos porfavor ;3</p>
+      <img src="content/icons/img_loading.png" alt="Cargando..." class="loader-icon">
+    </div>
+  </div>
+
+  <header class="top-bar">
+    <img src="content/title/img_grindtiers_1.png" alt="GrindTiers Logo" class="logo-head">
+
+    <div class="spacer"></div>
+
+    <div class="search-container">
+      <div class="search-box">
+        <span class="search-icon">🔍</span>
+        <input 
+          type="text" 
+          id="player-search" 
+          placeholder="Buscar jugador..." 
+          autocomplete="off"
+        >
+        <div id="player-search-visible" class="search-visible"></div>
+      </div>
+      <div id="search-results" class="search-dropdown"></div>
+    </div>
+  </header>
+
+  <div class="layout">
+    <aside>
+      <div class="categories">
+        <button class="category-btn active" data-mode="general">
+          <img src="content/icons/gamemodes/img_general.png" alt="" class="mode-icon">
+          General
+        </button>
+
+        <button class="category-btn" data-mode="popular">
+          <img src="content/icons/gamemodes/img_popular.png" alt="" class="mode-icon">
+          Popular
+        </button>
+
+        <details>
+          <summary>
+            <img src="content/icons/tierlists/img_mctiers.png" alt="" class="mode-icon summary-icon">
+            MCTiers
+          </summary>
+          <button class="category-btn" data-mode="vanilla">
+            <img src="content/icons/gamemodes/mctiers/img_vanilla.png" alt="" class="mode-icon">
+            Vanilla
+          </button>
+          <button class="category-btn" data-mode="uhc">
+            <img src="content/icons/gamemodes/mctiers/img_uhc.png" alt="" class="mode-icon">
+            UHC
+          </button>
+          <button class="category-btn" data-mode="dia_pot">
+            <img src="content/icons/gamemodes/mctiers/img_dia_pot.png" alt="" class="mode-icon">
+            Dia Pot
+          </button>
+          <button class="category-btn" data-mode="neth_pot">
+            <img src="content/icons/gamemodes/mctiers/img_neth_pot.png" alt="" class="mode-icon">
+            Neth Pot
+          </button>
+          <button class="category-btn" data-mode="smp">
+            <img src="content/icons/gamemodes/mctiers/img_smp.png" alt="" class="mode-icon">
+            SMP
+          </button>
+          <button class="category-btn" data-mode="sword">
+            <img src="content/icons/gamemodes/mctiers/img_sword.png" alt="" class="mode-icon">
+            Sword
+          </button>
+          <button class="category-btn" data-mode="axe">
+            <img src="content/icons/gamemodes/mctiers/img_axe.png" alt="" class="mode-icon">
+            Axe
+          </button>
+          <button class="category-btn" data-mode="mace">
+            <img src="content/icons/gamemodes/mctiers/img_mace.png" alt="" class="mode-icon">
+            Mace
+          </button>
+        </details>
+
+        <details>
+          <summary>
+            <img src="content/icons/tierlists/img_subtiers.png" alt="" class="mode-icon summary-icon">
+            Subtiers
+          </summary>
+          <button class="category-btn" data-mode="minecart">
+            <img src="content/icons/gamemodes/subtiers/img_minecart.png" alt="" class="mode-icon">
+            Minecart
+          </button>
+          <button class="category-btn" data-mode="dia_vanilla">
+            <img src="content/icons/gamemodes/subtiers/img_dia_crystal.png" alt="" class="mode-icon">
+            Dia Vanilla
+          </button>
+          <button class="category-btn" data-mode="debuff">
+            <img src="content/icons/gamemodes/subtiers/img_debuff.png" alt="" class="mode-icon">
+            Debuff
+          </button>
+          <button class="category-btn" data-mode="elytra">
+            <img src="content/icons/gamemodes/subtiers/img_elytra.png" alt="" class="mode-icon">
+            Elytra
+          </button>
+          <button class="category-btn" data-mode="speed">
+            <img src="content/icons/gamemodes/subtiers/img_speed.png" alt="" class="mode-icon">
+            Speed
+          </button>
+          <button class="category-btn" data-mode="creeper">
+            <img src="content/icons/gamemodes/subtiers/img_creeper.png" alt="" class="mode-icon">
+            Creeper
+          </button>
+          <button class="category-btn" data-mode="manhunt">
+            <img src="content/icons/gamemodes/subtiers/img_manhunt.png" alt="" class="mode-icon">
+            Manhunt
+          </button>
+          <button class="category-btn" data-mode="dia_smp">
+            <img src="content/icons/gamemodes/subtiers/img_dia_smp.png" alt="" class="mode-icon">
+            Dia SMP
+          </button>
+          <button class="category-btn" data-mode="bow">
+            <img src="content/icons/gamemodes/subtiers/img_bow.png" alt="" class="mode-icon">
+            Bow
+          </button>
+          <button class="category-btn" data-mode="bed">
+            <img src="content/icons/gamemodes/subtiers/img_bed.png" alt="" class="mode-icon">
+            Bed
+          </button>
+          <button class="category-btn" data-mode="og_vanilla">
+            <img src="content/icons/gamemodes/subtiers/img_og_vanilla.png" alt="" class="mode-icon">
+            OG Vanilla
+          </button>
+          <button class="category-btn" data-mode="trident">
+            <img src="content/icons/gamemodes/subtiers/img_trident.png" alt="" class="mode-icon">
+            Trident
+          </button>
+        </details>
+      </div>
+    </aside>
+
+    <main>
+      <div class="leaderboard-wrapper">
+        <section class="leaderboard">
+          <h2 id="current-mode">Ranking General</h2>
+          
+          <div class="overlay"></div>
+
+          <table>
+            <thead>
+              <tr>
+                <th class="rank">#</th>
+                <th>Jugador</th>
+                <th>Tier</th>
+                <th>Puntos</th>
+              </tr>
+            </thead>
+            <tbody id="leaderboard-body"></tbody>
+          </table>
+        </section>
+      </div>
+    </main>
+  </div>
+
+  <div id="player-modal" class="modal">
+    <div class="modal-content">
+      <span class="close-modal">×</span>
+      <div id="modal-body"></div>
+    </div>
+  </div>
+
+  <footer>
+    Este sitio web NO es oficial de la mctiers o pvptiers ni está asociado con ellos, proyecto hecho por fans para fans.
+  </footer>
+
+  <script src="script.js"></script>
+
+  <script>
+    const MIN_TOTAL_LOADER_TIME = 5500;
+
+    window.addEventListener('load', () => {
+      const loader = document.getElementById('page-loader');
+      if (!loader) return;
+
+      const hideLoader = () => {
+        loader.classList.add('fade-out');
+        setTimeout(() => loader.remove(), 800);
+      };
+
+      const elapsed = performance.now();
+      const remaining = MIN_TOTAL_LOADER_TIME - elapsed;
+
+      if (remaining <= 0) {
+        hideLoader();
+      } else {
+        setTimeout(hideLoader, remaining);
+      }
+    });
+  </script>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      const loaderText = document.querySelector('.loader-text');
+      if (loaderText) {
+        const text = loaderText.textContent.trim();
+        loaderText.innerHTML = text
+          .split('')
+          .map(char => `<span>${char === ' ' ? '&nbsp;' : char}</span>`)
+          .join('');
+
+        const spans = loaderText.querySelectorAll('span');
+        spans.forEach((span, index) => {
+          span.style.animationDelay = `${index * 0.08}s`;
+        });
+      }
+    });
+  </script>
+</body>
+</html>
